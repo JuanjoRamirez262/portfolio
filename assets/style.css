@@ -7,6 +7,8 @@
 
 body {
     background-color: var(--blue-navy);
+    width: 1200px;
+    justify-content: center;
 }
 
 
@@ -43,9 +45,10 @@ p {
 
 nav {
     margin: 16px 40px;
-    background-color: var(--blue-green);
     /* width: 95%; */
     border-radius: 15px;
+    color: var(--blue-green);
+    font-weight: bold;
 }
 
 
@@ -62,7 +65,11 @@ nav ul li, footer ul li {
 
 .navbar-element {
     text-decoration: none;
-    color: var(--blue-navy);
+    color: var(--blue-green);
+}
+
+.navbar-element:hover{
+    color: var(--baby-blue);
 }
 
 #about-me {
@@ -125,12 +132,19 @@ nav ul li, footer ul li {
 
 footer{
     margin: 16px 40px;
-    background-color: var(--blue-green);
-    border-radius: 15px;
+    color: var(--blue-green);
+
 }
 
 footer ul{
-    font-size: 120%;
+    font-size: 130%;
     justify-content: space-between;
-    
+    font-weight: bold;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--blue-green);
+}
+footer ul li a:hover{
+    color: var(--baby-blue);
 }
