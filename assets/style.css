@@ -45,7 +45,7 @@ p {
 
 nav {
     margin: 16px 40px;
-    /* width: 95%; */
+    font-size: 130%;
     border-radius: 15px;
     color: var(--blue-green);
     font-weight: bold;
