@@ -5,12 +5,16 @@
     --blue-navy: #05445E;
 }
 
+
+
 body {
     background-color: var(--blue-navy);
-    width: 1200px;
-    justify-content: center;
 }
 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 p {
     color: var(--blue-green);
@@ -28,9 +32,10 @@ p {
 }
 
 .column-2 {
-    width: 20%;
+    width: 30%;
+    margin: 15px 0px;
 }
-
+/* HEADER */
 .header-name {
     margin: 15px;
     font-size: 200%;
@@ -43,6 +48,7 @@ p {
     color: var(--baby-blue);
 }
 
+/* NAVBAR */
 nav {
     margin: 16px 40px;
     font-size: 130%;
@@ -72,6 +78,8 @@ nav ul li, footer ul li {
     color: var(--baby-blue);
 }
 
+/* ABOUT ME */
+
 #about-me {
     margin: 16px 40px;
     background-color: var(--blue-green);
@@ -85,6 +93,14 @@ nav ul li, footer ul li {
     padding-top: 5px;
     margin: 5px 15px;
 }
+
+.profile-picture {
+    width: 150px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+/* PROJECTS */
 
 #about-me p {
     margin: 5px 15px 15px 15px;
@@ -100,35 +116,38 @@ nav ul li, footer ul li {
 #projects .figures {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 0 1.5 calc(50% - 1em);
     
 }
 
 #projects h3 {
-    font-size: 120%;
+    font-size: 130%;
     color: var(--blue-grotto);
-    padding-top: 5px;
-    margin: 0px 15px;
+    margin: 0px 15px 15px;
     padding-top: 15px;
 }
 
 .project-box {
-    margin: 30px 30px 0px;
+    margin: auto;
 }
 
 .project-image {
     border-radius: 15px;
     
+    
+}
+
+.project-image:hover{
+    opacity: .8;
 }
 
 .project-title {
-    /* background-color: transparent; */
     position: relative;
-    left: 200px;
+    left: 140px;
     bottom: 70px;
     color: var(--blue-grotto);
 }
+
+/* FOOTER */
 
 footer{
     margin: 16px 40px;
@@ -147,4 +166,22 @@ footer ul li a{
 }
 footer ul li a:hover{
     color: var(--baby-blue);
+}
+
+@media screen and ( max-width: 980px){
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .project-title{
+
+    }
+    nav, footer {
+        max-width: 100%;
+    }
+    
+    .navbar-element, footer ul li {
+        font-size: 2vw;
+    }
 }
