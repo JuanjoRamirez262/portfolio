@@ -120,12 +120,12 @@ nav ul li, footer ul li {
     border-radius: 15px;
 }
 
-/* PROJECTS */
-
 #about-me p {
     margin: 5px 15px 15px 15px;
-    color: var(--baby-blue);
+    color: var(--blue-navy);
 }
+
+/* PROJECTS */
 
 #projects {
     background-color: var(--blue-green);
